@@ -1,6 +1,6 @@
 <?php
 
-namespace App\GraphQL\Queries\Category;
+namespace App\GraphQl\Queries\Category;
 
 use App\Models\Category;
 use GraphQL\Type\Definition\Type;

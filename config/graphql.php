@@ -75,23 +75,23 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                \App\GraphQL\Queries\Category\CategoryQuery::class,
-                \App\GraphQL\Queries\Category\CategoriesQuery::class,
-                \App\GraphQL\Queries\Article\ArticleQuery::class,
-                \App\GraphQL\Queries\Article\ArticleQuery::class,
+                'category'  => \App\GraphQL\Queries\Category\CategoryQuery::class,
+                'categories'=> \App\GraphQL\Queries\Category\CategoriesQuery::class,
+                'article'   => \App\GraphQL\Queries\Article\ArticleQuery::class,
+                'articles'  => \App\GraphQL\Queries\Article\ArticlesQuery::class,
             ],
             'mutation' => [
-                'createArticle' => \App\GraphQL\Mutations\Article\CreateArticleMutation::class,
-                'updateArticle' => \App\GraphQL\Mutations\Article\UpdateArticleMutation::class,
-                'deleteArticle' => \App\GraphQL\Mutations\Article\DeleteArticleMutation::class,
-                'createCategory' => \App\GraphQL\Mutations\Category\CreateCategoryMutation::class,
-                'updateCategory' => \App\GraphQL\Mutations\Category\UpdateCategoryMutation::class,
-                'deleteCategory' => \App\GraphQL\Mutations\Category\DeleteCategoryMutation::class,
+                'createArticle' => App\GraphQL\Mutations\Article\CreateArticleMutation::class,
+                'updateArticle' => App\GraphQL\Mutations\Article\UpdateArticleMutation::class,
+                'deleteArticle' => App\GraphQL\Mutations\Article\DeleteArticleMutation::class,
+                'createCategory' => App\GraphQL\Mutations\Category\CreateCategoryMutation::class,
+                'updateCategory' => App\GraphQL\Mutations\Category\UpdateCategoryMutation::class,
+                'deleteCategory' => App\GraphQL\Mutations\Category\DeleteCategoryMutation::class,
             ],
             // The types only available in this schema
             'types' => [
-                'Article' => \App\GraphQL\Types\ArticleType::class,
-                'Category' => \App\GraphQL\Types\CategoryType::class
+                'Article' => App\GraphQL\Types\ArticleType::class,
+                'Category' => App\GraphQL\Types\CategoryType::class
             ],
 
             // Laravel HTTP middleware

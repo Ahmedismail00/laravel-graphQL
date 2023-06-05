@@ -1,6 +1,6 @@
 <?php
 
-// app/graphql/types/CategoryType 
+// app/graphql/types/CategoryType
 
 namespace App\GraphQL\Types;
 
@@ -33,7 +33,7 @@ class ArticleType extends GraphQLType
                 'description' => 'Content of the article'
             ],
             'category' => [
-                'type' => Type::type('Category'),
+                'type' => GraphQL::type('Category'),
                 'description' => 'the category who owns the article'
             ]
         ];
