@@ -25,9 +25,3 @@
 Now we have to put everything together. 
 
 ***We have to register our queries, mutations, and types in our config/graphql.***
-
-
-## Features
-- Laravel Sail
-- DB seeder
-- DB factory
