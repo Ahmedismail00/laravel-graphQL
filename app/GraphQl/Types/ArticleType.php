@@ -32,9 +32,9 @@ class ArticleType extends GraphQLType
                 'type' => Type::nonNull(Type::string()),
                 'description' => 'Content of the article'
             ],
-            'user' => [
-                'type' => Type::type('User'),
-                'description' => 'the user who owns the article'
+            'category' => [
+                'type' => Type::type('Category'),
+                'description' => 'the category who owns the article'
             ]
         ];
     }

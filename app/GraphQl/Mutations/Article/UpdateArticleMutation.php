@@ -34,10 +34,10 @@ class UpdateArticleMutation extends Mutation
                 'name' => 'contnet',
                 'type' =>  Type::nonNull(Type::string()),
             ],
-            'user_id' => [
-                'name' => 'user_id',
+            'cateogry_id' => [
+                'name' => 'cateogry_id',
                 'type' => Type::nonNull(Type::int()),
-                'rules' => ['exists:users,id']
+                'rules' => ['exists:categories,id']
             ]
         ];
     }

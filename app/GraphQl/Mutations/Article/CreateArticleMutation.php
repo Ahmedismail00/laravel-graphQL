@@ -31,10 +31,10 @@ class CreateArticleMutation extends Mutation
                 'name' => 'contnet',
                 'type' =>  Type::nonNull(Type::string()),
             ],
-            'user_id' => [
-                'name' => 'user_id',
+            'category_id' => [
+                'name' => 'category_id',
                 'type' => Type::nonNull(Type::int()),
-                'rules' => ['exists:users,id']
+                'rules' => ['exists:categories,id']
             ]
         ];
     }
