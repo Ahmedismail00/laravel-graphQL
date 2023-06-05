@@ -24,4 +24,4 @@
 
 Now we have to put everything together. 
 
-***We have to register our queries, mutations, and types in our config/graphql.***
+***We have to register our queries, mutations, and types in our config/graphql. And all things are done.***
